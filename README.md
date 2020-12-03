@@ -1,4 +1,5 @@
-# ceramicshop
+# Ceramic shop
+Shopping Card and Panier shop.
 
 ## Project setup
 ```
