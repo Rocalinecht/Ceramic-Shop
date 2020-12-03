@@ -20,6 +20,14 @@
   </b-card>
 </div>
   </div>
+  <div>
+    <b-card bg-variant="dark" text-variant="white" title="Panier">
+  <b-card-text>
+    {{totalAmount}}
+  </b-card-text>
+ 
+</b-card>
+  </div>
   </div>
   </div>
 </template>
@@ -32,11 +40,6 @@ export default {
   },
    data(){
     return{
-      tickets:{
-        products:null,
-        total:0,
-      },
-      counter:0,
       products: [
         {
           id:1,
@@ -71,6 +74,11 @@ export default {
           quantity:1
         }
       ]
+    }
+  },
+  computed:{
+    totalAmount(){
+      return this.products.price 
     }
   }
 }
